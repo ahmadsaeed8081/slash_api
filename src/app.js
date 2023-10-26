@@ -108,7 +108,7 @@ app.listen(port, () => {
 });
 
 // InsertData();
-getData();
+// getData();
 
 
 
