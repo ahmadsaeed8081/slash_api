@@ -75,7 +75,7 @@ app.patch("/user/:id",async (req, res)=>{
 
     const updtaedata= await collection.findByIdAndUpdate(_id,req.body);
 
-    res.send(updtaedata);
+    res.send("its done");
 
 })
 
