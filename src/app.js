@@ -46,6 +46,7 @@ const InsertData = async () =>{
 const data = new collection({
     userAddress : "0900",
     Name : "ahmad",
+    image:"bkjkbkjbjk",
 
 
 })
@@ -68,7 +69,15 @@ app.get("/get", async (req, res) => {
 
 })
 
+app.patch("/user/:id",async (req, res)=>{
 
+    const _id=req.params.id;
+
+    const updtaedata= await collection.findByIdAndUpdate(_id,req.body);
+
+    res.send(updtaedata);
+
+})
 
 app.post("/add", async (req, res) => {
     console.log("its working");
